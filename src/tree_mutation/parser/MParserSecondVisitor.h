@@ -25,49 +25,81 @@ public:
 
   virtual antlrcpp::Any visitDocument(MParser::DocumentContext *ctx) override {
     //intervals.push_back(ctx->getSourceInterval());
-    texts.push_back(ctx->start->getInputStream()->getText(ctx->getSourceInterval()));
+    misc::Interval intvl = misc::Interval();
+    intvl.a = ctx->getStart()->getStartIndex();
+    intvl.b = ctx->getStop()->getStopIndex();
+    texts.push_back(ctx->start->getInputStream()->getText(intvl));
+    //cout << "---" << ctx->start->getInputStream()->getText(intvl) << ctx->start->getInputStream()->getText(ctx->getSourceInterval()) <<endl;
     return visitChildren(ctx);
   }
 
   virtual antlrcpp::Any visitProlog(MParser::PrologContext *ctx) override {
     //intervals.push_back(ctx->getSourceInterval());
-    texts.push_back(ctx->start->getInputStream()->getText(ctx->getSourceInterval()));
+    misc::Interval intvl = misc::Interval();
+    intvl.a = ctx->getStart()->getStartIndex();
+    intvl.b = ctx->getStop()->getStopIndex();
+    texts.push_back(ctx->start->getInputStream()->getText(intvl));
+    //cout << "---" << ctx->start->getInputStream()->getText(intvl) << ctx->start->getInputStream()->getText(ctx->getSourceInterval()) <<endl;
     return visitChildren(ctx);
   }
 
   virtual antlrcpp::Any visitContent(MParser::ContentContext *ctx) override {
     //intervals.push_back(ctx->getSourceInterval());
-    texts.push_back(ctx->start->getInputStream()->getText(ctx->getSourceInterval()));
+    misc::Interval intvl = misc::Interval();
+    intvl.a = ctx->getStart()->getStartIndex();
+    intvl.b = ctx->getStop()->getStopIndex();
+    texts.push_back(ctx->start->getInputStream()->getText(intvl));
+    //cout << "---" << ctx->start->getInputStream()->getText(intvl) << ctx->start->getInputStream()->getText(ctx->getSourceInterval()) <<endl;
     return visitChildren(ctx);
   }
 
   virtual antlrcpp::Any visitElement(MParser::ElementContext *ctx) override {
     //intervals.push_back(ctx->getSourceInterval());
-    texts.push_back(ctx->start->getInputStream()->getText(ctx->getSourceInterval()));
+    misc::Interval intvl = misc::Interval();
+    intvl.a = ctx->getStart()->getStartIndex();
+    intvl.b = ctx->getStop()->getStopIndex();
+    texts.push_back(ctx->start->getInputStream()->getText(intvl));
+    //cout << "---" << ctx->start->getInputStream()->getText(intvl) << ctx->start->getInputStream()->getText(ctx->getSourceInterval()) <<endl;
     return visitChildren(ctx);
   }
 
   virtual antlrcpp::Any visitReference(MParser::ReferenceContext *ctx) override {
     //intervals.push_back(ctx->getSourceInterval());
-    texts.push_back(ctx->start->getInputStream()->getText(ctx->getSourceInterval()));
+    misc::Interval intvl = misc::Interval();
+    intvl.a = ctx->getStart()->getStartIndex();
+    intvl.b = ctx->getStop()->getStopIndex();
+    texts.push_back(ctx->start->getInputStream()->getText(intvl));
+    //cout << "---" << ctx->start->getInputStream()->getText(intvl) << ctx->start->getInputStream()->getText(ctx->getSourceInterval()) <<endl;
     return visitChildren(ctx);
   }
 
   virtual antlrcpp::Any visitAttribute(MParser::AttributeContext *ctx) override {
     //intervals.push_back(ctx->getSourceInterval());
-    texts.push_back(ctx->start->getInputStream()->getText(ctx->getSourceInterval()));
+    misc::Interval intvl = misc::Interval();
+    intvl.a = ctx->getStart()->getStartIndex();
+    intvl.b = ctx->getStop()->getStopIndex();
+    texts.push_back(ctx->start->getInputStream()->getText(intvl));
+    //cout << "---" << ctx->start->getInputStream()->getText(intvl) << ctx->start->getInputStream()->getText(ctx->getSourceInterval()) <<endl;
     return visitChildren(ctx);
   }
 
   virtual antlrcpp::Any visitChardata(MParser::ChardataContext *ctx) override {
     //intervals.push_back(ctx->getSourceInterval());
-    texts.push_back(ctx->start->getInputStream()->getText(ctx->getSourceInterval()));
+    misc::Interval intvl = misc::Interval();
+    intvl.a = ctx->getStart()->getStartIndex();
+    intvl.b = ctx->getStop()->getStopIndex();
+    texts.push_back(ctx->start->getInputStream()->getText(intvl));
+    //cout << "---" << ctx->start->getInputStream()->getText(intvl) << ctx->start->getInputStream()->getText(ctx->getSourceInterval()) <<endl;
     return visitChildren(ctx);
   }
 
   virtual antlrcpp::Any visitMisc(MParser::MiscContext *ctx) override {
     //intervals.push_back(ctx->getSourceInterval());
-    texts.push_back(ctx->start->getInputStream()->getText(ctx->getSourceInterval()));
+    misc::Interval intvl = misc::Interval();
+    intvl.a = ctx->getStart()->getStartIndex();
+    intvl.b = ctx->getStop()->getStopIndex();
+    texts.push_back(ctx->start->getInputStream()->getText(intvl));
+    //cout << "---" << ctx->start->getInputStream()->getText(intvl) << ctx->start->getInputStream()->getText(ctx->getSourceInterval()) <<endl;
     return visitChildren(ctx);
   }
 
