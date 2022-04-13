@@ -6,3 +6,4 @@ Makefile
 dist
 *.o
 cmake_install.cmake
+!/parser/Makefile
