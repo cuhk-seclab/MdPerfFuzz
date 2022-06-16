@@ -74,7 +74,7 @@ More information about MdPerfFuzz can be found in our ASE '21 research paper.
 
 ## License
 
-MdPerfFuzz is under [MIT License](LICENSE).
+MdPerfFuzz is under Apache License, Version 2.0.
 
 ## Contacts
 
